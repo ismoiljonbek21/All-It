@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body {
+    overflow-x: hidden;
+    max-width: 100%;
+    background: #373E49;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+.allit {
+    color: #2697FF;
+}
+
+
+.header {
+    overflow: hidden;
+
+    position: relative;
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        z-index: 999;
+
+        .logo {
+            img {
+                width: 127px;
+
+                @media (max-width:376px) {
+                    width: 100px;
+                    margin-top: 5px;
+                }
+            }
+        }
+
+        .menu {
+
+            display: flex;
+            margin-right: 6%;
+            transition: all .4s;
+
+
+            @media (max-width:683px) {
+                position: absolute;
+                flex-direction: column;
+                top: 40px;
+                margin-right: 0%;
+                overflow: hidden;
+                width: 100%;
+                padding-left: 10px;
+                transform-origin: left;
+                transform: scaleX(0);
+                background-color: rgba(5, 5, 5, 0.801);
+
+                a {
+                    color: #fff !important;
+                    border-bottom-color: #fff !important;
+                }
+            }
+
+            li {
+                padding: 5px 10px;
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 30px;
+                    color: #A7B8D2;
+                    transition: .1s;
+                    padding-bottom: 0px;
+                    border-bottom: 0px solid #5F79A0;
+
+                    &:hover {
+                        color: #5F79A0;
+                        border-bottom: 1px solid #5F79A0;
+                        padding-bottom: 5px;
+
+                    }
+                }
+
+            }
+        }
+
+        .language {
+            select {
+                background-color: rgba(10, 6, 224, 0);
+                color: #fff;
+                cursor: pointer;
+                box-shadow: none;
+                border: none;
+                text-transform: uppercase;
+                @media (max-width:766px) {
+                    padding-right: 5px;
+
+                }
+                @media (max-width:592px) {
+                    padding-right: 0px;
+
+                }
+
+                option {
+                    background-color: #373E49;
+                    text-align: center;
+                }
+            }
+        }
+
+        .toggle-menu {
+            display: none;
+
+            @media (max-width:683px) {
+                display: block;
+            }
+        }
+    }
+
+    .captions {
+        display: flex;
+        justify-content: space-between;
+
+        .caption {
+            z-index: 2;
+
+            .text_1 {
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 60px;
+                line-height: 108px;
+                letter-spacing: 0.05em;
+                color: #FFFFFF;
+
+                @media (max-width:918px) {
+                    font-size: 48px;
+
+                }
+
+                @media (max-width:766px) {
+                    font-size: 36px;
+
+                }
+                @media (max-width:592px) {
+                    font-size: 30px;
+
+                }
+                @media (max-width:463px) {
+                    font-size: 26px;
+                    line-height: 90px;
+
+                }
+                @media (max-width:412px) {
+                    font-size: 23px;
+                    line-height: 80px;
+
+                }
+                @media (max-width:376px) {
+                    line-height: 40px;
+
+                }
+            }
+
+            .text_2 {
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 30px;
+
+                color: #445061;
+            }
+
+            .pastga_surish {
+
+                display: inline-block;
+                margin-top: 200px;
+                transition: all;
+                transform-origin: left;
+                transform: rotate(-90deg);
+                margin-left: 7px;
+
+                a {
+                    @media (max-width:766px) {
+                        font-size: 13px;
+
+                    }
+
+                    text-decoration: none;
+                    font-family: Poppins;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 28px;
+                    letter-spacing: 0.2em;
+                    color: #FFFFFF;
+
+                    &:hover {
+                        color: #2697FF;
+                    }
+
+                }
+            }
+
+        }
+
+        .social_links {
+            @media (max-width:592px) {
+                width: 30px;
+                padding-right: 20px;
+                padding-top: 0;
+
+            }
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding-bottom: 20px;
+            padding-top: 90px;
+
+            .link {
+                margin-right: -10px;
+
+                a {
+                    font-family: Poppins;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                    @media (max-width:766px) {
+                        font-size: 13px;
+
+                    }
+                    line-height: 28px;
+                    letter-spacing: 0.2em;
+                    color: #FFFFFF;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: #2697FF;
+                    }
+
+                }
+
+                transform-origin: bottom;
+                transform: rotate(90deg);
+            }
+
+        }
+
+        .circle_header {
+            width: 1000px;
+            top: -400px;
+            z-index: 0;
+            left: -650px;
+            position: absolute;
+            opacity: .4;
+            filter: brightness(20%);
+
+        }
+
+        .header_bg {
+            position: absolute;
+            width: 550px;
+            bottom: 10%;
+            right: 10%;
+            filter: brightness(20%);
+            opacity: .3;
+            @media (max-width:650px) {
+                width: 100%;
+                right: 0;
+
+            }
+            @media (max-width:322px) {
+                bottom: 20%;
+
+            }
+        }
+    }
+
+}
+
+@keyframes pastga_surish {
+    0% {
+        margin-top: 220px;
+    }
+
+    50% {
+        margin-top: 180px;
+    }
+
+    100% {
+        margin-top: 200px;
+    }
+}
