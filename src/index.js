@@ -30,12 +30,10 @@ let menu = document.getElementById("menu");
 let count = 0;
 toggle.onclick = function () {
   if (count % 2 == 0) {
-    menu.style.height = "auto";
     menu.style.transform = "scaleY(1)";
     count++;
   } else if (count % 2 == 1) {
     menu.style.transform = "scaleY(0)";
-    menu.style.height = "0";
     count++;
   }
 };

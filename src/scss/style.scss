@@ -33,34 +33,41 @@ body {
                     width: 100px;
                     margin-top: 5px;
                 }
+                @media (max-width:1199px) {
+                    padding-left: 5px;
+                }
             }
         }
 
         .menu {
-
             display: flex;
             margin-right: 6%;
             transition: all .4s;
 
 
             @media (max-width:683px) {
+                position: absolute;
                 flex-direction: column;
                 top: 40px;
                 order: 3;
-                height: 0;
                 margin-right: 0%;
                 overflow: hidden;
                 width: 100%;
                 padding-left: 10px;
                 transform-origin: top;
                 transform: scaleY(0);
-                background-color: rgba(5, 5, 5, 0.425);
+                background-color:#373E49;
+                border-bottom: 1px solid #fff;
 
                 a {
                     color: #fff !important;
                     border-bottom-color: #fff !important;
                 }
             }
+            @media (max-width:766px) {
+                margin-right: 0;
+            }
+
 
             li {
                 padding: 5px 10px;
@@ -94,12 +101,16 @@ body {
             select {
                 background-color: rgba(10, 6, 224, 0);
                 color: #fff;
+                padding-top: 1px !important;
                 cursor: pointer;
+                margin-left: 100%;
                 box-shadow: none;
                 border: none;
                 text-transform: uppercase;
                 @media (max-width:766px) {
                     padding-right: 5px;
+                    padding-left: 0px;
+                    margin-left: -3px;
 
                 }
                 @media (max-width:592px) {
