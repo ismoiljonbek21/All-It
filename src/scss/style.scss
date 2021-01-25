@@ -44,16 +44,17 @@ body {
 
 
             @media (max-width:683px) {
-                position: absolute;
                 flex-direction: column;
                 top: 40px;
+                order: 3;
+                height: 0;
                 margin-right: 0%;
                 overflow: hidden;
                 width: 100%;
                 padding-left: 10px;
-                transform-origin: left;
-                transform: scaleX(0);
-                background-color: rgba(5, 5, 5, 0.801);
+                transform-origin: top;
+                transform: scaleY(0);
+                background-color: rgba(5, 5, 5, 0.425);
 
                 a {
                     color: #fff !important;
@@ -115,6 +116,7 @@ body {
 
         .toggle-menu {
             display: none;
+            padding-right: 10px;
 
             @media (max-width:683px) {
                 display: block;
@@ -152,17 +154,13 @@ body {
 
                 }
                 @media (max-width:463px) {
-                    font-size: 26px;
+                    font-size: 30px;
                     line-height: 90px;
 
                 }
-                @media (max-width:412px) {
-                    font-size: 23px;
-                    line-height: 80px;
-
-                }
+               
                 @media (max-width:376px) {
-                    line-height: 40px;
+                    line-height: 60px;
 
                 }
             }
@@ -173,7 +171,13 @@ body {
                 font-weight: 500;
                 font-size: 16px;
                 line-height: 30px;
-
+                @media (max-width:450px) {
+                    line-height: 50px;
+                }
+                @media (max-width:750px) {
+                    margin-top: 30px;
+                }
+                
                 color: #445061;
             }
 
@@ -185,6 +189,10 @@ body {
                 transform-origin: left;
                 transform: rotate(-90deg);
                 margin-left: 7px;
+                @media (max-width:450px) {
+                    font-size: 13px;
+                    margin-top:150px;
+                }
 
                 a {
                     @media (max-width:766px) {
@@ -276,10 +284,7 @@ body {
                 right: 0;
 
             }
-            @media (max-width:322px) {
-                bottom: 20%;
-
-            }
+           
         }
     }
 
