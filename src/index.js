@@ -37,3 +37,70 @@ toggle.onclick = function () {
     count++;
   }
 };
+if (screen.width >= 1000) {
+  new Splide("#splide", {
+    perPage: 4,
+    cover: true,
+    height: "20rem",
+    lazyLoad: "nearby",
+    breakpoints: {
+      height: "8rem",
+    },
+  }).mount();
+}
+else if (screen.width >= 650) {
+  new Splide("#splide", {
+    perPage: 3,
+    cover: true,
+    height: "20rem",
+    lazyLoad: "nearby",
+    breakpoints: {
+      height: "8rem",
+    },
+  }).mount();
+}
+else if (screen.width >= 500) {
+  new Splide("#splide", {
+    perPage: 2,
+    cover: true,
+    height: "16rem",
+    lazyLoad: "nearby",
+    breakpoints: {
+      height: "8rem",
+    },
+  }).mount();
+}
+else if (screen.width >= 400) {
+  new Splide("#splide", {
+    perPage: 2,
+    cover: true,
+    height: "13rem",
+    lazyLoad: "nearby",
+    breakpoints: {
+      height: "8rem",
+    },
+  }).mount();
+}
+else if (screen.width >= 330) {
+  new Splide("#splide", {
+    perPage: 2,
+    cover: true,
+    height: "10rem",
+    lazyLoad: "nearby",
+    breakpoints: {
+      height: "8rem",
+    },
+  }).mount();
+}
+else {
+   new Splide("#splide", {
+     perPage: 1,
+     cover: true,
+     height: "10rem",
+     lazyLoad: "nearby",
+     breakpoints: {
+       height: "8rem",
+     },
+   }).mount();
+}
+
