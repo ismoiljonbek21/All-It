@@ -103,4 +103,23 @@ else {
      },
    }).mount();
 }
-
+// let left = $('#left');
+// let right = $('#right');
+// var  first = $('#section4team');
+// if(left == 'onclick'){
+//   if(first.style.)
+// }
+new Splide("#splide2", {
+  perPage: 1,
+  cover: true,
+  height: "10rem",
+  lazyLoad: "nearby",
+  breakpoints: {
+    height: "8rem",
+  },
+ 
+}).mount();
+new Splide( '#splide2', {
+	type  : 'fade',
+	rewind: true,
+} ).mount();
